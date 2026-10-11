@@ -1,0 +1,321 @@
+/**
+ * ANIMATIONS CSS
+ * Animations fluides et professionnelles
+ */
+
+/* ==============================================
+   KEYFRAMES
+   ============================================== */
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.8);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes glow {
+    0%, 100% {
+        box-shadow: 0 0 20px rgba(99, 102, 241, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 40px rgba(99, 102, 241, 0.8);
+    }
+}
+
+@keyframes glowText {
+    0%, 100% {
+        text-shadow: 0 0 10px rgba(99, 102, 241, 0.5);
+    }
+    50% {
+        text-shadow: 0 0 20px rgba(99, 102, 241, 0.8);
+    }
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes shimmer {
+    0% {
+        background-position: -1000px 0;
+    }
+    100% {
+        background-position: 1000px 0;
+    }
+}
+
+/* ==============================================
+   CLASSES D'ANIMATION
+   ============================================== */
+
+.fade-in {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.fade-in-up {
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.fade-in-down {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+.fade-in-left {
+    animation: fadeInLeft 0.8s ease-out;
+}
+
+.fade-in-right {
+    animation: fadeInRight 0.8s ease-out;
+}
+
+.slide-up {
+    animation: slideUp 0.6s ease-out;
+}
+
+.scale-in {
+    animation: scaleIn 0.5s ease-out;
+}
+
+.glow-effect {
+    animation: glow 2s ease-in-out infinite;
+}
+
+.glow-text {
+    animation: glowText 2s ease-in-out infinite;
+}
+
+.pulse-effect {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+/* ==============================================
+   ANIMATIONS AU SCROLL (via JS)
+   ============================================== */
+
+.scroll-reveal {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal.active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.scroll-reveal-left {
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal-left.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+.scroll-reveal-right {
+    opacity: 0;
+    transform: translateX(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.scroll-reveal-right.active {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+/* ==============================================
+   ANIMATIONS SPÉCIFIQUES
+   ============================================== */
+
+/* Animation du logo */
+.nav-logo a {
+    animation: fadeInDown 0.8s ease-out;
+}
+
+/* Animation des liens de navigation */
+.nav-link {
+    opacity: 0;
+    animation: fadeInDown 0.6s ease-out forwards;
+}
+
+.nav-link:nth-child(1) { animation-delay: 0.1s; }
+.nav-link:nth-child(2) { animation-delay: 0.2s; }
+.nav-link:nth-child(3) { animation-delay: 0.3s; }
+.nav-link:nth-child(4) { animation-delay: 0.4s; }
+.nav-link:nth-child(5) { animation-delay: 0.5s; }
+.nav-link:nth-child(6) { animation-delay: 0.6s; }
+
+/* Animation du hero */
+.hero-content h1 {
+    animation: fadeInUp 1s ease-out;
+}
+
+.hero-content h2 {
+    animation: fadeInUp 1s ease-out 0.2s backwards;
+}
+
+.hero-content p {
+    animation: fadeInUp 1s ease-out 0.4s backwards;
+}
+
+.hero-buttons {
+    animation: fadeInUp 1s ease-out 0.6s backwards;
+}
+
+/* Animation des cartes */
+.card {
+    opacity: 0;
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+.cards-grid .card:nth-child(1) { animation-delay: 0.1s; }
+.cards-grid .card:nth-child(2) { animation-delay: 0.2s; }
+.cards-grid .card:nth-child(3) { animation-delay: 0.3s; }
+.cards-grid .card:nth-child(4) { animation-delay: 0.4s; }
+.cards-grid .card:nth-child(5) { animation-delay: 0.5s; }
+.cards-grid .card:nth-child(6) { animation-delay: 0.6s; }
+
+/* Hover effects */
+.card:hover .card-icon {
+    animation: pulse 0.5s ease;
+}
+
+/* Animation de la barre de progression des skills */
+.skill-progress {
+    animation: slideRight 1.5s ease-out;
+}
+
+@keyframes slideRight {
+    from {
+        width: 0;
+    }
+}
+
+/* Animation du bouton theme toggle */
+.theme-toggle i {
+    transition: transform 0.5s ease;
+}
+
+body.dark-mode .theme-toggle i {
+    transform: rotate(180deg);
+}
+
+/* Effet shimmer sur les boutons */
+.btn-primary {
+    position: relative;
+    overflow: hidden;
+}
+
+.btn-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.btn-primary:hover::before {
+    left: 100%;
+}
+
+/* Réduction des animations sur demande (accessibilité) */
+@media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .scroll-reveal, .scroll-reveal-left, .scroll-reveal-right { opacity: 1; transform: none; }
+    .card, .nav-link { opacity: 1 !important; animation: none !important; }
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}

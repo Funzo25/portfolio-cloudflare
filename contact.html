@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <link rel="icon" href="data:,">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Enzo Chateau — BTS SIO SISR 2025–2027. Systèmes, réseaux, cybersécurité et développement.">
+    <meta name="author" content="Enzo Chateau">
+    
+    <title>Contact - Enzo Chateau</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts - Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Styles CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/dark.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+</head>
+<body class="light-mode">
+<script src="assets/js/theme.js"></script>
+    
+    <!-- Navigation -->
+    <nav class="navbar glass">
+        <div class="container nav-container">
+            <!-- Logo -->
+            <div class="nav-logo">
+                <a href="index.html">
+                    <i class="fas fa-code"></i>
+                    <span>Enzo Chateau</span>
+                </a>
+            </div>
+            
+            <!-- Menu Desktop -->
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link ">
+                    <i class="fas fa-home"></i> Accueil
+                </a></li>
+                <li><a href="compétences.html" class="nav-link ">
+                    <i class="fas fa-code"></i> Compétences
+                </a></li>
+                <li><a href="projets.html" class="nav-link ">
+                    <i class="fas fa-folder-open"></i> Projets
+                </a></li>
+                <li><a href="cv.html" class="nav-link ">
+                    <i class="fas fa-file-alt"></i> CV
+                </a></li>
+                <li><a href="lettre-motivation.html" class="nav-link ">
+                    <i class="fas fa-envelope"></i> Lettre
+                </a></li>
+                <li><a href="contact.html" class="nav-link active">
+                    <i class="fas fa-paper-plane"></i> Contact
+                </a></li>
+            </ul>
+            
+            <!-- Actions -->
+            <div class="nav-actions">
+                <!-- Theme Toggle -->
+                <button class="theme-toggle" id="themeToggle" aria-label="Changer de thème">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
+                
+
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="menu-toggle" id="menuToggle" aria-expanded="false" aria-controls="navMenu" aria-label="Menu mobile">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <section class="container">
+            <div class="hero">
+                <h1>Contactez-moi</h1>
+                <p>Stage, alternance ou projet : échangeons sur vos besoins en systèmes, réseaux et développement.</p>
+            </div>
+            
+            <div class="cards-grid" style="margin-bottom: 3rem;">
+                <div class="card glass scroll-reveal">
+                    <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                    <h3 class="card-title">Contact</h3>
+                    <p class="card-description">
+                        <a href="contact.html#contactForm" style="color: var(--primary-light);">
+                            Formulaire de contact
+                        </a>
+                    </p>
+                </div>
+                
+                <div class="card glass scroll-reveal">
+                    <div class="card-icon"><i class="fab fa-github"></i></div>
+                    <h3 class="card-title">GitHub</h3>
+                    <p class="card-description">
+                        <a href="https://github.com/Funzo25" target="_blank" rel="noopener noreferrer" style="color: var(--primary-light);">
+                            @Funzo25
+                        </a>
+                    </p>
+                </div>
+            </div>
+            
+            <form class="contact-form glass scroll-reveal" id="contactForm" data-formspree-id="mrpelyqb" action="https://formspree.io/f/mrpelyqb" method="POST" data-validate aria-describedby="contactStatus">
+                <h2 style="text-align: center; margin-bottom: 2rem; color: var(--primary-light);">
+                    <i class="fas fa-paper-plane"></i> Envoyer un message
+                </h2>
+                
+                <p id="contactStatus" class="card-description" role="status" aria-live="polite">Les champs marqués d’un astérisque sont obligatoires.</p>
+<noscript><p>Activez JavaScript pour utiliser le formulaire de contact.</p></noscript>
+<div class="form-group">
+                    <label for="name"><i class="fas fa-user"></i> Nom complet <span style="color: var(--error);">*</span></label>
+                    <input type="text" id="name" name="name" required minlength="2" maxlength="100" autocomplete="name">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i> Email <span style="color: var(--error);">*</span></label>
+                    <input type="email" id="email" name="email" required maxlength="254" autocomplete="email">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject"><i class="fas fa-tag"></i> Sujet <span style="color: var(--error);">*</span></label>
+                    <input type="text" id="subject" name="subject" required minlength="3" maxlength="160">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message"><i class="fas fa-comment-alt"></i> Message <span style="color: var(--error);">*</span></label>
+                    <textarea id="message" name="message" required minlength="10" maxlength="10000"></textarea>
+                </div>
+                
+                <button type="submit" disabled class="btn btn-primary" style="width: 100%; justify-content: center;">
+                    <i class="fas fa-paper-plane"></i> Envoyer le message
+                </button>
+            </form>
+        </section>
+    
+    </main>
+    
+    <!-- Footer -->
+    <footer class="footer glass">
+        <div class="container footer-container">
+            <div class="footer-content">
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h3><i class="fas fa-code"></i> Enzo Chateau</h3>
+                    <p>Étudiant en BTS SIO SISR, je développe mes compétences en systèmes, réseaux et cybersécurité.</p><p class="footer-domain">enzochateau.com</p>
+                    <div class="footer-social">
+                        <a href="https://github.com/Funzo25" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="contact.html#contactForm" aria-label="Formulaire de contact">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div class="footer-section">
+                    <h3><i class="fas fa-link"></i> Liens Rapides</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html"><i class="fas fa-chevron-right"></i> Accueil</a></li>
+                        <li><a href="compétences.html"><i class="fas fa-chevron-right"></i> Compétences</a></li>
+                        <li><a href="projets.html"><i class="fas fa-chevron-right"></i> Projets</a></li>
+                        <li><a href="contact.html"><i class="fas fa-chevron-right"></i> Contact</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Documents -->
+                <div class="footer-section">
+                    <h3><i class="fas fa-file-download"></i> Documents</h3>
+                    <ul class="footer-links">
+                        <li><a href="cv.html"><i class="fas fa-chevron-right"></i> Consulter mon CV</a></li>
+                        <li><a href="lettre-motivation.html"><i class="fas fa-chevron-right"></i> Lettre de motivation</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="footer-section">
+                    <h3><i class="fas fa-address-card"></i> Contact</h3>
+                    <ul class="footer-contact">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="contact.html#contactForm">Formulaire de contact</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Hérault, France</span>
+                        </li>
+                        <li>
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>BTS SIO - SISR</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="footer-bottom">
+                <p>&copy; 2026 Enzo Chateau. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts JS -->
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/contact.js"></script>
+</body>
+</html>
